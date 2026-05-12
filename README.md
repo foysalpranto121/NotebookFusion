@@ -39,7 +39,10 @@ Install via pip:
 
 ```bash
 pip install NotebookFusion
-```
+
+
+```bash 
+pip install -r requirements_dev.txt
 
 ---
 
