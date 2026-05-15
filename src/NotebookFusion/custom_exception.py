@@ -1,12 +1,9 @@
 import sys
-from typing import TYPE_CHECKING
-
-if TYPE_CHECKING:
-    from types import TracebackType
+from types import ModuleType
 
 
-def error_message_detail(error: Exception, error_detail: "sys") -> str:
-    _, _, exc_tb = error_detail.exc_info()
+def error_message_detail(error: Exception, error_detail: ModuleType) -> str:
+    _, _, exc_tb = error_detail.exc_info()  # type: ignore
     if exc_tb is not None:
         file_name = exc_tb.tb_frame.f_code.co_filename
         line_number = exc_tb.tb_lineno
@@ -21,7 +18,7 @@ def error_message_detail(error: Exception, error_detail: "sys") -> str:
 
 
 class NotebookFusionException(Exception):
-    def __init__(self, error_message: Exception, error_detail: "sys"):
+    def __init__(self, error_message: Exception, error_detail: ModuleType):
         super().__init__(str(error_message))
         self.error_message = error_message_detail(
             error_message, error_detail=error_detail
