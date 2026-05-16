@@ -1,80 +1,48 @@
-# NotebookFusion  🚀
-
+# 🚀 NotebookFusion
 
 ![PyPI version](https://img.shields.io/pypi/v/NotebookFusion.svg)
 ![Python versions](https://img.shields.io/pypi/pyversions/NotebookFusion.svg)
 ![License](https://img.shields.io/pypi/l/NotebookFusion.svg)
 
-NotebookFusion is a lightweight Python package that allows you to seamlessly render live websites and embed YouTube videos directly inside Jupyter Notebooks, JupyterLab, and Google Colab environments.
+**NotebookFusion** is a lightweight Python package that allows you to seamlessly render live websites and embed YouTube videos directly inside Jupyter Notebooks, JupyterLab, and Google Colab environments.
 
-No more switching browser tabs while coding — view documentation, tutorials, dashboards, or videos right beside your notebook cells.
+No more switching browser tabs while coding — view websites, tutorials, dashboards, or videos right beside your notebook cells.
 
 ---
 
 # ✨ Features
 
-- 🌐 **Website Rendering**  
-  Display live HTTPS websites directly inside notebook output cells.
-
-- ▶️ **YouTube Video Embedding**  
-  Automatically parse and embed YouTube videos from standard URLs.
-
-- 📏 **Customizable Viewport**  
-  Easily adjust width and height.
-
-- ⚡ **Lightweight & Fast**  
-  Built using standard IPython display utilities with minimal dependencies.
-
-- 📓 **Notebook Friendly**
-  - Jupyter Notebook
-  - JupyterLab
-  - Google Colab
-  - VS Code Notebook
+- 🌐 Website Rendering → Display live HTTPS websites inside notebook output cells  
+- ▶️ YouTube Embedding → Automatically embed YouTube videos from URLs  
+- 📏 Customizable Viewport → Adjust width and height easily  
+- ⚡ Lightweight & Fast → Minimal dependencies using IPython display tools  
+- 📓 Notebook Friendly → Works on Jupyter Notebook, JupyterLab, Google Colab, VS Code  
 
 ---
 
 # 📦 Installation
 
-Install via pip:
-
 ```bash
 pip install NotebookFusion
 
-
-```bash 
+development install:
 pip install -r requirements_dev.txt
 
----
+🚀 Quick Start
 
-# 🚀 Quick Start
-
-## ▶️ Render a YouTube Video
-
-```python
+▶️ YouTube Video
 from NotebookFusion.youtube import render_youtube_video
 
-render_youtube_video(
-    "https://www.youtube.com/watch?v=h25pePMdoPA&t=712s"
-)
-```
+render_youtube_video("https://www.youtube.com/watch?v=h25pePMdoPA&t=712s")
 
----
-
-## 🌐 Render a Website
-
-```python
+🌐 Website Rendering
 from NotebookFusion.site import render_site
 
 render_site("https://www.google.com")
-```
 
----
 
-# ⚙️ Advanced Usage
-
-## Custom Width & Height
-
-```python
+⚙️ Advanced Usage
+Custom Website Size
 from NotebookFusion.site import render_site
 
 render_site(
@@ -82,13 +50,7 @@ render_site(
     width="100%",
     height="600px"
 )
-```
-
----
-
-## Embed YouTube with Custom Size
-
-```python
+Custom YouTube Size
 from NotebookFusion.youtube import render_youtube_video
 
 render_youtube_video(
@@ -96,36 +58,19 @@ render_youtube_video(
     width="900",
     height="500"
 )
-```
-
----
-
-# 🧠 Why NotebookFusion?
-
-NotebookFusion helps Data Scientists, AI Engineers, Students, and Researchers by allowing them to:
-
-- Read documentation without leaving notebooks
-- Watch tutorials while coding
-- Display dashboards or live web apps
-- Improve notebook-based learning workflows
-- Create interactive demo notebooks
-
----
-
-# 🖥️ Supported Platforms
-
-| Platform | Supported |
-|----------|------------|
-| Jupyter Notebook | ✅ |
-| JupyterLab | ✅ |
-| Google Colab | ✅ |
-| VS Code Notebook | ✅ |
-
----
-
-# 📂 Project Structure
-
-```text
+🧠 Why NotebookFusion?
+Read documentation inside notebooks
+Watch tutorials without leaving code
+Embed dashboards and live websites
+Improve interactive learning workflow
+Build powerful notebook demos
+🖥️ Supported Platforms
+Platform	Supported
+Jupyter Notebook	✅
+JupyterLab	✅
+Google Colab	✅
+VS Code Notebook	✅
+📂 Project Structure
 NotebookFusion/
 │
 ├── NotebookFusion/
@@ -137,61 +82,26 @@ NotebookFusion/
 ├── requirements.txt
 ├── setup.py
 └── LICENSE
-```
-
----
-
-# 🛠️ Development Setup
-
-Clone the repository:
-
-```bash
+🛠️ Development Setup
 git clone https://github.com/yourusername/NotebookFusion.git
-```
-
-Move into the project directory:
-
-```bash
 cd NotebookFusion
-```
 
-Create a virtual environment:
-
-```bash
 conda create -n notebookfusion_env python=3.10 -y
-```
-
-Activate the environment:
-
-```bash
 conda activate notebookfusion_env
-```
 
-Install development dependencies:
-
-```bash
 pip install -r requirements_dev.txt
-```
+🤝 Contributing
+Fork this repository
+Create a new branch
+Commit your changes
+Open a Pull Request
+📄 License
 
----
+MIT License
 
-# 🤝 Contributing
+⭐ Support
 
-Contributions are welcome!
+If you like this project, give it a ⭐ on GitHub
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
 
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-# ⭐ Support
-
-If you find this project useful, consider giving it a ⭐ on GitHub!
+If you want, I can next :contentReference[oaicite:0]{index=0}.

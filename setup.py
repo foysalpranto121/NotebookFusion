@@ -11,7 +11,7 @@ SRC_REPO = "NotebookFusion"
 
 setuptools.setup(
     name=SRC_REPO,
-    version=__version__,
+    version=_version,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="A Python package for enhanced Jupyter notebook functionality.",
