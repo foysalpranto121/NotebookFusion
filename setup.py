@@ -26,6 +26,7 @@ setuptools.setup(
     install_requires=[
         "ensure>=1.0.2",
         "py-youtube>=1.1.7",
+        "ipython>=8.0.0",
     ],
     python_requires=">=3.8",
 )
