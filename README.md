@@ -1,7 +1,7 @@
 # 🚀 NotebookFusion
 
 ![PyPI version](https://img.shields.io/pypi/v/NotebookFusion.svg)
-![Python versions](https://img.shields.io/pypi/pyversions/NotebookFusion.svg)
+![Python versions] (https://pypi.org/project/NotebookFusion/0.0.3/)
 ![License](https://img.shields.io/pypi/l/NotebookFusion.svg)
 
 **NotebookFusion** makes it easy to embed live websites and YouTube videos directly inside Jupyter Notebook, JupyterLab, Google Colab, and VS Code notebook outputs.
