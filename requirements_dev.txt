@@ -13,3 +13,4 @@ flake8>=6.1.0
 mypy>=1.5.0
 
 -e .
+## some time its create issue in (-e .) so we can remove it and install the package using pip install -e . command
