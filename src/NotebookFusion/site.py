@@ -1,8 +1,7 @@
 from IPython import display
 import urllib.request
-from NexusViewPro.custom_exception import InvalidURLException
-from NexusViewPro.logger import logger
-
+from NotebookFusion.custom_exception import InvalidURLException
+from NotebookFusion.logger import logger
 
 
 def is_valid(URL: str) -> bool:
