@@ -2,14 +2,6 @@
 requires = ["setuptools>=42.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "notebookfusion"
-version = "0.0.2"
-description = "NotebookFusion package"
-authors = [
-    { name = "foysalpranto121" }
-]
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
